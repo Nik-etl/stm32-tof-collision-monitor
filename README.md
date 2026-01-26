@@ -5,6 +5,7 @@
 This project implements a high-performance obstacle detection system for autonomous mobile robots (AMRs). By fusing data from six **VL53L8CX Time-of-Flight (ToF)** sensors, the system provides a near-360° safety perimeter. It was developed to upgrade an iRobot Create 3 platform with safety overrides.
 
 ![System Architecture](images/system_architecture.png)
+
 *(Figure 1 from Technical Report: High-level data flow between STM32, Raspberry Pi, and ROS2 nodes)*
 
 ## Key Features
@@ -34,4 +35,5 @@ please refer to the **[Technical System Report](docs/Technical_Report_STM32_ToF_
 
 ---
 *Status: Archived. This repository serves as the technical documentation and architecture reference for the project.*
+
 
