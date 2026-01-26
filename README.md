@@ -19,7 +19,7 @@ This project implements a high-performance obstacle detection system for autonom
 * **Connectivity:** TCA9548A I2C Multiplexer (1-to-8 channels)
 * **Host Integration:** Raspberry Pi 5 (Network/OpenWRT) & Raspberry Pi 4 (ROS 2 Humble middleware)
 
-![Wiring Diagram](images/wiring_diagram.png)
+![Wiring Diagram](images/wiring_diagram.pdf)
 *(Figure 3 from Technical Report: Sensor array wiring topology)*
 (Only 4 sensors are drawn in the diagram, this is just for simplicity)
 
@@ -34,3 +34,4 @@ please refer to the **[Technical System Report](docs/Technical_Report_STM32_ToF_
 
 ---
 *Status: Archived. This repository serves as the technical documentation and architecture reference for the project.*
+
