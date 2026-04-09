@@ -25,9 +25,8 @@ This project implements a high-performance obstacle detection system for autonom
 (Only 4 sensors are drawn in the diagram, this is just for simplicity)
 
 ## Technical Challenges & Solutions
-## Technical Challenges & Solutions
-* [cite_start]**Integration of Novel Hardware:** The VL53L8CX is a cutting-edge sensor with limited public documentation/examples[cite: 318]. [cite_start]The team successfully reverse-engineered the necessary wiring maps and I2C configurations by manually debugging the relationship between the STM32 HAL and the sensor's physical pinout[cite: 315, 316, 317].
-* [cite_start]**Firmware Management:** Unlike standard sensors, the VL53L8CX is RAM-based and requires a full firmware upload at every power cycle[cite: 179]. [cite_start]We implemented a robust boot sequence in C to handle this upload and verify sensor integrity before entering the main control loop[cite: 181, 182].
+* **Integration of Novel Hardware:** The VL53L8CX is a cutting-edge sensor with limited public documentation/examples[cite: 318]. [cite_start]The team successfully reverse-engineered the necessary wiring maps and I2C configurations by manually debugging the relationship between the STM32 HAL and the sensor's physical pinout[cite: 315, 316, 317].
+* **Firmware Management:** Unlike standard sensors, the VL53L8CX is RAM-based and requires a full firmware upload at every power cycle[cite: 179]. [cite_start]We implemented a robust boot sequence in C to handle this upload and verify sensor integrity before entering the main control loop[cite: 181, 182].
 * **Data Throughput:** Optimized the I2C polling cycle to handle high-bandwidth data from 384 total zones (6 sensors x 64 zones) while maintaining a 15 Hz refresh rate.
 
 ## Documentation
